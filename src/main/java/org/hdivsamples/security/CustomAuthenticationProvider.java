@@ -33,6 +33,8 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
 		// Stop login process and show login page again
 		Object aux = RequestContextHolder.getRequestAttributes().getAttribute("org.hdiv.action.EDITABLE_PARAMETER_ERROR",
 				RequestAttributes.SCOPE_REQUEST);
+		
+		System.out.println("wow");
 
 		if (aux != null) {
 			throw new BadCredentialsException("Bad Credentials");
