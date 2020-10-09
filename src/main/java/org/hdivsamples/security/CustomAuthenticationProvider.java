@@ -34,7 +34,7 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
 		Object aux = RequestContextHolder.getRequestAttributes().getAttribute("org.hdiv.action.EDITABLE_PARAMETER_ERROR",
 				RequestAttributes.SCOPE_REQUEST);
 		
-		System.out.println("wow");
+		// System.out.println("wow");
 
 		if (aux != null) {
 			throw new BadCredentialsException("Bad Credentials");
